@@ -30,7 +30,7 @@
 
 void cleaner(int[][] office, int r, int c, int[][] dirs, int[] dir, int ind) {
         if (queue.size() == 0) {
-            return;
+            return;	
         }
         String fmove = queue.poll();
         if (fmove.equals("go")) {
@@ -67,7 +67,7 @@ void cleaner(int[][] office, int r, int c, int[][] dirs, int[] dir, int ind) {
             } else {
                 ind++;
             }
-            dir = dirs[ind];
+            ddir = dirs[ind];
             queue.poll();
             sum = sum + office[r][c];
             cleaner(office, r, c, dirs, dir, ind);
