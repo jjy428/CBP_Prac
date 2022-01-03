@@ -17,6 +17,7 @@ class Solution {
 			if (!hashMap.isEmpty()) {
 				List<Integer> countList = new ArrayList<>(hashMap.values());
 				int max = Collections.max(countList);
+				
 				if (max > 1) for (String key : hashMap.keySet()) if (hashMap.get(key) == max) answerList.add(key);
 				hashMap.clear();
 				}
