@@ -6,7 +6,7 @@ class Solution {
         // 모든 사람이 심사를 받는데 걸리는 시간의 최솟값
         long answer = Long.MAX_VALUE;
         
-        Arrays.sort(times);
+        Arrays.sort(times);	
         
         long start, mid, end;
         start = 0;
