@@ -28,7 +28,7 @@ class Solution {
                         priorityQueueWithMin.remove(min);
                     }
                 }
-            }
+            }    
 
         }
         if (!priorityQueueWithMax.isEmpty()) {
