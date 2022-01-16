@@ -33,7 +33,7 @@ class Solution {
         }
         if (!priorityQueueWithMax.isEmpty()) {
             answer[0] = priorityQueueWithMax.peek();
-            answer[1] = priorityQueueWithMin.peek();
+            answer[1] = priorityQueueWithMin.peek();    
 
         }
         return answer;
