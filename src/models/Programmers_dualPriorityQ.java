@@ -13,6 +13,7 @@ class Solution {
             if (splitOther[0].equals("I")) {
                 priorityQueueWithMax.add(Integer.parseInt(splitOther[1]));
                 priorityQueueWithMin.add(Integer.parseInt(splitOther[1]));
+               
             }
 
             if (splitOther[0].equals("D")) {
