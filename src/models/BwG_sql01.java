@@ -27,3 +27,77 @@ SELECT
 		WHERE
 			T3.INST_CD = #(instCd)
 			AND T3.STAFF_ID = #(staffId)
+			
+			
+			
+			
+					SELECT * FROM cm_cd_m WHERE CD_NBR = '11959';
+			SELECT * FROM cm_cd_d WHERE CD_NBR = '11959';
+
+
+			SELECT *
+			FROM AT_STAFF_M
+			WHERE
+			   INST_CD = 'STDA'
+			   AND STAFF_ID = 'SFINI002' AND STAFF_EMPLYMNT_TP_CD = 1;
+
+			SELECT *
+			FROM cm_cd_m
+			WHERE CD_NBR = '11959';
+
+			SELECT *
+			FROM cm_cd_d
+			WHERE CD_NBR = '11959' AND CD = '01';
+
+
+			SELECT *
+			FROM AT_Staff_m a1
+			   , cm_cd_d a2
+			WHERE a1.INST_CD = 'STDA'
+			   AND a1.STAFF_ID = 'SFINI002'
+			   AND a1.STAFF_EMPLYMNT_TP_CD = a2.CD;
+
+			SELECT *
+			FROM at_staff_m T1
+			   , cm_cd_m T2
+			   , cm_cd_d T3
+			   , AT_DEPT_STAFF_R T4
+			   , AT_DEPT_M T5
+			WHERE T1.INST_CD = 'STDA'
+			   AND T1.STAFF_ID = 'SFINI002'
+			   AND T2.CD_NBR = T3.CD_NBR
+			   AND T1.STAFF_EMPLYMNT_TP_CD = T3.CD
+			   AND T1.INST_CD = T4.INST_CD
+			   AND T1.STAFF_ID = T4.STAFF_ID
+			   AND T4.DEPT_ID = T5.DEPT_ID;
+
+
+
+
+
+
+
+			SELECT *
+			FROM at_staff_m T1
+			   , cm_cd_m T2
+			   , cm_cd_d T3
+			   , AT_DEPT_STAFF_R T4
+			   , AT_DEPT_M T5
+			   where 
+			       T2.CD_NBR = '11959'
+			   AND T2.CD_NBR = T3.CD_NBR
+			   AND T1.STAFF_EMPLYMNT_TP_CD = T3.CD
+			   AND T1.INST_CD = T4.INST_CD
+			   AND T1.STAFF_ID = T4.STAFF_ID
+			   AND T4.DEPT_ID = T5.DEPT_ID
+			   AND T1.INST_CD = 'STDA'
+			   AND T1.STAFF_ID = 'SFINI002';
+
+
+
+
+
+			T1, cm_cd_d T2
+			WHERE T1.CD_NBR = T2.CD_NBR
+			   AND STAFF.INST_CD = 'STDA'
+			   AND STAFF.STAFF_ID = 'SFINI002';			
