@@ -32,7 +32,7 @@ class Solution {
             if(distance - prev < mid) cnt++;
             
             if(cnt <= n){
-            	// 주어진 n 보다 작거나 같은 만큼 돌을 없애서
+            	// 주어진 n 보다 작거나 같은 만큼 돌을 없애서2
                 // 최솟값 x를 만들 수 있다.
                 ans = mid > ans ? mid : ans;
                 left = mid + 1;

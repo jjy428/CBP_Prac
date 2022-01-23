@@ -14,7 +14,7 @@ public class WordConversion {
             return;
         }
         
-        for(int i = 0; i < words.length; i++) {                        //탐색한 글자중 하나만 차이나고 탐색되지 않은 글자이 있다면. dfs 수행
+        for(int i = 0; i < words.length; i++) {                        //탐색한 글자중 하나만 차이나고 탐색되지 않은 글자이 있다면.  수행
             if(!used[i] && check(presentWord, words[i])) {
                 used[i] = true;
                 dfs(words[i],target,count+1, words);
@@ -34,5 +34,3 @@ public class WordConversion {
     }
 }
 
-
-출처: https://tosuccess.tistory.com/29 [EI_HJ]
