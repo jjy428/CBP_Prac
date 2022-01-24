@@ -18,7 +18,7 @@ class Solution {
         int min = matched;
         int max = matched + zero;
         
-        int[] answer = {Math.min(7 - max, 6), Math.min(7 - min, 6)};
+        int[] answer = {Math.min(7 - max, 6), Math.min(7 - min, 6)};  
         return answer;
     }
 }
