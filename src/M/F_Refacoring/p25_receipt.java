@@ -22,7 +22,7 @@ public class p25_receipt {
 	        }
 	        break;
 	      case "comedy":
-	        thisAmount = 30000;
+	        thisAmount = 30000;  
 	        if (perf.audience > 20) {
 	          thisAmount += 10000 + 500 * (perf.audience - 20);
 	        }
