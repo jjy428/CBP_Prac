@@ -11,7 +11,7 @@ public class p25_receipt {
 	                            minimumFractionDigits: 2 }).format;
 	  
 	    for (let perf of invoice.performances) {
-	      const play = plays[perf.playID];
+	      const play = plays[perf.playID];   
 	      let thisAmount = 0;
 	  
 	      switch (play.type) {
