@@ -28,7 +28,7 @@ public class p25_receipt {
 	        }
 	        thisAmount += 300 * perf.audience;
 	        break;
-	      default:
+	      default:  
 	          throw new Error(`unknown type: ${play.type}`);
 	      }
 	  
