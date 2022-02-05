@@ -33,8 +33,7 @@ export default function createStatementData(invoice, plays) {
 
   function playFor(aPerformance) {
     return plays[aPerformance.playID];
-  }
-}
+  }  
 
 function createPerformanceCalculator(aPerformance, aPlay) {
   switch (aPlay.type) {
