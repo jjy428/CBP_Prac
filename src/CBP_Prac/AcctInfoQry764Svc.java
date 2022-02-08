@@ -24,7 +24,7 @@ public class AcctInfoQry764Svc {
 	}
 
 	/**
-	 * 출력 정보 조립
+	 * 출력 정보 조립 
 	 */
 
 	private AccInfoQry764SvcGetDpstBasicInfoOut _assembleArrBasicInfoOutput(ArrReal arrReal)
