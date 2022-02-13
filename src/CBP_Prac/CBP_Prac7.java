@@ -29,7 +29,7 @@ public class CBP_Prac7 {
 		       * step3: 서비스처리규칙검증
 		       */
 		      _validateService(in, arr);
-
+  
 		      /*
 		       * step4: 거래일련번호 생성
 		       */
