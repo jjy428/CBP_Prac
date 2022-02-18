@@ -19,8 +19,7 @@ import java.util.List;
 @BxmCategory(logicalName = "모임통장7번4번", author = "NB-21122716")
 public class DepositGroupAccount764Svc {
    private final Logger logger = LoggerFactory.getLogger(this.getClass());
-
-   private CmnContext cmnContext;
+ 
    private ArrMngr arrMngr;
    private ArrSrvcCntr arrSrvcCntr;
    private ArrTxMngr arrTxMngr;
