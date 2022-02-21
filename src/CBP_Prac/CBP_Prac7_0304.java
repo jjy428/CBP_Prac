@@ -23,8 +23,9 @@ public class DepositGroupAccount764Svc {
    private ArrMngr arrMngr;
    private ArrSrvcCntr arrSrvcCntr;
    private ArrTxMngr arrTxMngr;
-   private CustMngr custMngr;
+   private CustMngr custMngr;   
    private ArrIntRtProvider arrIntRtProvider;
+   
 
 
    @BxmServiceOperation("openGroupAccount74")
