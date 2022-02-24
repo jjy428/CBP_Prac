@@ -1,4 +1,4 @@
-lass Solution {
+class Solution {
     public long solution(long w, long h) {
         long answer = 0;
         
