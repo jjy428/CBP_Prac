@@ -22,7 +22,8 @@ public class AcctInfoQry764Svc {
 		 */
 		return _assembleArrBasicInfoOutput(arrReal);
 	}
-
+  
+	
 	/**
 	 * 출력 정보 조립 
 	 */
