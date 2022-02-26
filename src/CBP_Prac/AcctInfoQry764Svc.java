@@ -21,7 +21,8 @@ public class AcctInfoQry764Svc {
 		 * step2: 계약 정보에 의해서 출력 조립
 		 */
 		return _assembleArrBasicInfoOutput(arrReal);
-	}
+	}  
+	
   
 	
 	/**
