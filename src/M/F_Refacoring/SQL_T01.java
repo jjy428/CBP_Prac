@@ -11,6 +11,9 @@ WHERE NODE_TYPE = 'S'
   AND END_ORD_NO IS NULL
   
   
+  
+  
+  
   //수정
   
   UPDATE /*+ INDEX(TB_CCPIDSCNT PK_CCPIDSCNT) */
