@@ -14,6 +14,7 @@ WHERE NODE_TYPE = 'S'
   
   
   
+  
   //수정
   
   UPDATE /*+ INDEX(TB_CCPIDSCNT PK_CCPIDSCNT) */
